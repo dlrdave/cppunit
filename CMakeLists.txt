@@ -199,3 +199,17 @@ set_target_properties(cppunit PROPERTIES
 )
 
 install(TARGETS cppunit DESTINATION lib)
+
+# Install source tree *.h files as laid out in the source "include" directory:
+#
+install(DIRECTORY include/
+  DESTINATION include
+  FILES_MATCHING PATTERN "*.h"
+)
+
+# Install the configured/generated header file:
+#
+install(FILES
+  ${CMAKE_CURRENT_BINARY_DIR}/include/cppunit/config-auto.h
+  DESTINATION include/cppunit
+)
