@@ -25,7 +25,7 @@
 #cmakedefine CPPUNIT_HAVE__FINITE
 
 /* define if the compiler supports GCC C++ ABI name demangling */
-#cmakedefine CPPUNIT_HAVE_GCC_ABI_DEMANGLE
+#cmakedefine CPPUNIT_HAVE_GCC_ABI_DEMANGLE ${CPPUNIT_HAVE_GCC_ABI_DEMANGLE}
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 //Not used #undef HAVE_INTTYPES_H
@@ -43,13 +43,13 @@
 #cmakedefine CPPUNIT_HAVE_NAMESPACES
 
 /* define if the compiler supports Run-Time Type Identification */
-#cmakedefine CPPUNIT_HAVE_RTTI
+#cmakedefine CPPUNIT_HAVE_RTTI ${CPPUNIT_HAVE_RTTI}
 
 /* Define if you have the shl_load function. */
 #cmakedefine CPPUNIT_HAVE_SHL_LOAD
 
 /* define if the compiler has stringstream */
-#cmakedefine CPPUNIT_HAVE_SSTREAM
+#cmakedefine CPPUNIT_HAVE_SSTREAM ${CPPUNIT_HAVE_SSTREAM}
 
 /* Define to 1 if you have the <stdint.h> header file. */
 //Not used #undef HAVE_STDINT_H
@@ -97,7 +97,7 @@
 //Not used #undef STDC_HEADERS
 
 /* Define to 1 to use type_info::name() for class names */
-#cmakedefine CPPUNIT_USE_TYPEINFO_NAME
+#cmakedefine CPPUNIT_USE_TYPEINFO_NAME ${CPPUNIT_USE_TYPEINFO_NAME}
 
 /* Version number of package */
 #cmakedefine CPPUNIT_VERSION
