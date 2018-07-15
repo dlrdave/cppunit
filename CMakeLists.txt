@@ -198,4 +198,4 @@ set_target_properties(cppunit PROPERTIES
 	SOVERSION ${CPPUNIT_MAJOR_VERSION}
 )
 
-#install(TARGETS cppunit DESTINATION lib)
+install(TARGETS cppunit DESTINATION lib)
