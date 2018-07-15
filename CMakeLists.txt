@@ -187,7 +187,7 @@ set(cppunit_SRCS
 	src/cppunit/Win32DynamicLibraryManager.cpp
 )
 
-add_library(cppunit SHARED ${cppunit_SRCS})
+add_library(cppunit ${cppunit_SRCS})
 
 set_target_properties(cppunit PROPERTIES
 	VERSION ${CPPUNIT_VERSION}
