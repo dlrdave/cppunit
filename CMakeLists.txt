@@ -128,7 +128,11 @@ check_library_exists(dl shl_load "" CPPUNIT_HAVE_SHL_LOAD)
 check_include_file_cxx(typeinfo CPPUNIT_USE_TYPEINFO_NAME)
 #CPPUNIT_VERSION ok
 
-configure_file(config/config.h.cmake ${CMAKE_CURRENT_SOURCE_DIR}/include/cppunit/config-auto.h)
+configure_file(
+  ${CMAKE_CURRENT_SOURCE_DIR}/config/config.h.cmake
+  ${CMAKE_CURRENT_BINARY_DIR}/include/cppunit/config-auto.h
+  )
+include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
 ##
 
 
